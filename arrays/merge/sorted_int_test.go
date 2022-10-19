@@ -9,11 +9,11 @@ import (
 )
 
 func TestSortedIntV1(t *testing.T) {
-	testSortedInt(t, merge.SortedIntV1)
+	testSortedInt(t, merge.V1)
 }
 
 func TestSortedIntV2(t *testing.T) {
-	testSortedInt(t, merge.SortedIntV2)
+	testSortedInt(t, merge.V2)
 }
 
 func testSortedInt(tt *testing.T, fn func([]int, []int) []int) {

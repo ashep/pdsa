@@ -9,15 +9,15 @@ import (
 // This var kept global intentionally to avoid compiler optimizations
 var result []int
 
-func BenchmarkSortedIntV1(b *testing.B) {
-	benchmarkSortedInt(b, merge.SortedIntV1)
+func BenchmarkV1(b *testing.B) {
+	benchmark(b, merge.V1)
 }
 
-func BenchmarkSortedIntV2(b *testing.B) {
-	benchmarkSortedInt(b, merge.SortedIntV2)
+func BenchmarkV2(b *testing.B) {
+	benchmark(b, merge.V2)
 }
 
-func benchmarkSortedInt(bb *testing.B, fn func([]int, []int) []int) {
+func benchmark(bb *testing.B, fn func([]int, []int) []int) {
 	var a1Of1K = makeArr(1000)
 	var a2Of1K = makeArr(1000)
 	var a1Of100K = makeArr(100000)

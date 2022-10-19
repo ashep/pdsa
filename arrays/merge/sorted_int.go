@@ -1,9 +1,8 @@
 // Package merge demonstrates ways of merging two sorted arrays of integers.
 package merge
 
-// SortedIntV1 uses slice shifting.
-// As benchmark tests show, this version works slightly faster than v2.
-func SortedIntV1(a1, a2 []int) []int {
+// V1 uses slice shifting.
+func V1(a1, a2 []int) []int {
 	if len(a1) == 0 {
 		return a2
 	}
@@ -46,9 +45,8 @@ func SortedIntV1(a1, a2 []int) []int {
 	return res
 }
 
-// SortedIntV2 uses indices to track each array during looping.
-// As benchmark tests show, this version works slightly slower than v1.
-func SortedIntV2(a1, a2 []int) []int {
+// V2 uses indices to track each array during looping.
+func V2(a1, a2 []int) []int {
 	if len(a1) == 0 {
 		return a2
 	}
