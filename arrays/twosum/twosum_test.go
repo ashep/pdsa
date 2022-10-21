@@ -18,7 +18,11 @@ func TestTwoSumV2(t *testing.T) {
 
 func testTwoSum(t *testing.T, fn func(nums []int, target int) []int) {
 	t.Run("OneSolution", func(tt *testing.T) {
-		require.Equal(tt, []int{2, 3}, fn([]int{1, 2, 3, 4}, 7))
+		require.Equal(tt, []int{1, 2}, fn([]int{3, 2, 4}, 6))
+	})
+
+	t.Run("OneSolutionSameNumbers", func(tt *testing.T) {
+		require.Equal(tt, []int{0, 1}, fn([]int{3, 3}, 6))
 	})
 
 	t.Run("TwoSolutions", func(tt *testing.T) {

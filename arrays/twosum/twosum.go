@@ -23,14 +23,14 @@ func V1(nums []int, target int) []int {
 // Time complexity is O(n*2), space complexity is O(n).
 func V2(nums []int, target int) []int {
 	var r []int
-	numsMap := make(map[int]int)
 
+	numsMap := make(map[int]int)
 	for i, v := range nums {
 		numsMap[v] = i
 	}
 
 	for firstNumIndex := 0; firstNumIndex < len(nums)-1; firstNumIndex++ {
-		if secondNumIndex, ok := numsMap[target-nums[firstNumIndex]]; ok {
+		if secondNumIndex, ok := numsMap[target-nums[firstNumIndex]]; ok && secondNumIndex != firstNumIndex {
 			r = append(r, firstNumIndex, secondNumIndex)
 			break
 		}
