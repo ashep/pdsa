@@ -1,5 +1,5 @@
-// Package merge demonstrates ways of merging two sorted arrays of integers.
-package merge
+// Package arraysortedmerge demonstrates ways of merging two sorted arrays of integers.
+package arraysortedmerge
 
 // V1 uses slice shifting.
 func V1(a1, a2 []int) []int {

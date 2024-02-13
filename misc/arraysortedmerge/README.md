@@ -8,7 +8,6 @@ Merge two sorted arrays into a third sorted array.
 go test
 ```
 
-
 ## Run benchmark tests
 
 ```shell

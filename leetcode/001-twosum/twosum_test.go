@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ashep/pdsa/arrays/twosum"
+	"github.com/ashep/pdsa/leetcode/001-twosum"
 )
 
 func TestTwoSumV1(t *testing.T) {

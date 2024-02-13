@@ -1,19 +1,19 @@
-package merge_test
+package arraysortedmerge_test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ashep/pdsa/arrays/merge"
+	"github.com/ashep/pdsa/misc/arraysortedmerge"
 )
 
 func TestSortedIntV1(t *testing.T) {
-	testSortedInt(t, merge.V1)
+	testSortedInt(t, arraysortedmerge.V1)
 }
 
 func TestSortedIntV2(t *testing.T) {
-	testSortedInt(t, merge.V2)
+	testSortedInt(t, arraysortedmerge.V2)
 }
 
 func testSortedInt(tt *testing.T, fn func([]int, []int) []int) {

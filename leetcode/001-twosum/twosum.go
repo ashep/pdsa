@@ -1,6 +1,6 @@
 package twosum
 
-// V1 solves the task in an brute force way, scanning nums using nested loop.
+// V1 solves the task in a brute force way, scanning nums using nested loop.
 // Time complexity is O(n^2), space complexity is O(1).
 func V1(nums []int, target int) []int {
 	var r []int
@@ -18,8 +18,8 @@ func V1(nums []int, target int) []int {
 	return r
 }
 
-// V2 uses additional hash map to store all nums values and their indices. Since hash map has time complexity of O(n),
-// this allows to search for a second number faster.
+// V2 uses additional hash map to store all nums values and their indices.
+// Since hash map has time complexity of O(n), it allows to search for a second number faster.
 // Time complexity is O(n*2), space complexity is O(n).
 func V2(nums []int, target int) []int {
 	var r []int

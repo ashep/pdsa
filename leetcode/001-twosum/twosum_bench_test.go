@@ -3,7 +3,7 @@ package twosum_test
 import (
 	"testing"
 
-	"github.com/ashep/pdsa/arrays/twosum"
+	"github.com/ashep/pdsa/leetcode/001-twosum"
 )
 
 // This var kept global intentionally to avoid compiler optimizations

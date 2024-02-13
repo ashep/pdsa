@@ -1,20 +1,20 @@
-package merge_test
+package arraysortedmerge_test
 
 import (
 	"testing"
 
-	"github.com/ashep/pdsa/arrays/merge"
+	"github.com/ashep/pdsa/misc/arraysortedmerge"
 )
 
 // This var kept global intentionally to avoid compiler optimizations
 var result []int
 
 func BenchmarkV1(b *testing.B) {
-	benchmark(b, merge.V1)
+	benchmark(b, arraysortedmerge.V1)
 }
 
 func BenchmarkV2(b *testing.B) {
-	benchmark(b, merge.V2)
+	benchmark(b, arraysortedmerge.V2)
 }
 
 func benchmark(bb *testing.B, fn func([]int, []int) []int) {
